@@ -25,7 +25,7 @@ def NAND(x1,x2):
     tmp = np.sum(w*x) + b
     if tmp <= 0:
         return 0
-    else
+    else:
         return 1
 
 def OR(x1,x2):
@@ -37,5 +37,3 @@ def OR(x1,x2):
         return 0
     else:
         return 1
-    
-
