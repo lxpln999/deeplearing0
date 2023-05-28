@@ -1,4 +1,5 @@
 import numpy as np
+import torch
 
 x = np.array([0,1])
 w = np.array([0.5,0.5])
@@ -54,3 +55,9 @@ def sofmax(a):
 
 tt = sofmax(np.array([0.2,0.8,0.9,0.22]))
 print(tt)
+
+def mean_squared_error(y,t):
+    return 0.5 * np.sum((y-t)**2)
+
+m = torch.arange(4)
+print(m)
