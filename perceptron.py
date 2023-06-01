@@ -59,5 +59,6 @@ print(tt)
 def mean_squared_error(y,t):
     return 0.5 * np.sum((y-t)**2)
 
-m = torch.arange(4)
-print(m)
+mm = torch.arange(20).reshape(4,5)
+print(mm)
+print(torch.diagonal(mm))
